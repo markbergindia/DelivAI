@@ -74,7 +74,7 @@ delivai/
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/Jnan-py/delivai.git
+   git clone https://github.com/markbergindia/DelivAI.git
    cd delivai
    ```
 
@@ -138,3 +138,4 @@ Train the models using the provided Jupyter notebooks in the `notebooks/` folder
 
 Contributions, issues, and feature requests are welcome!  
 Please check the [issues page](https://github.com/Jnan-py/delivai/issues) for known issues before submitting a new one.
+
