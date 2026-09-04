@@ -141,3 +141,39 @@ Train the models using the provided Jupyter notebooks in the `notebooks/` folder
 Contributions, issues, and feature requests are welcome!  
 Please check the [issues page](https://github.com/Jnan-py/delivai/issues) for known issues before submitting a new one.
 
+
+
+
+
+CI/CD :
+
+Pipeline overview
+- Git → GitLab CI → validation → Render → Live application
+- Purpose: automate dependency installation, validation, build, and deployment to reduce manual steps and surface issues early
+
+What’s included in this prototype
+- Automated dependency install and environment setup
+- Validation steps (linting / basic checks)
+- GitLab CI configuration for build + deploy
+- Render deployment notes and environment configuration
+- Dockerfile for experimentation with containerized builds (optional)
+
+How to reproduce locally
+1. Install dependencies:
+   pip install -r requirements.txt
+2. Run validation:
+   ./scripts/validate.sh
+3. Run app:
+   streamlit run app/main.py
+
+Troubleshooting notes
+- Common issues encountered: dependency mismatches, Git sync/merge conflicts, Render environment variable configuration
+- Tip: pin dependencies (requirements.txt/lockfile) and enable CI caching to reduce build flakiness
+
+Planned improvements
+- Add unit and integration tests and run them in CI
+- Centralize secrets via GitLab CI variables or a secrets manager
+- Add build caching and strict dependency pinning
+- Add basic observability (logging/metrics) and alerts on Render
+- Consider canary or blue/green deployments for safer releases
+
