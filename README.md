@@ -1,5 +1,7 @@
 # DelivAI: AI-Powered Road Delivery and Trip Optimization
 
+DelivAi Live Link : https://delivai-h2oq.onrender.com/
+
 DelivAI is an AI-powered Streamlit application that optimizes Road Trips and Deliveries by combining geospatial analysis, weather prediction, and delay estimation. The project leverages historical taxi trip data and weather datasets to forecast delivery delays, enabling dynamic route planning and resource allocation.
 
 ## Overview
